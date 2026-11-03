@@ -42,6 +42,12 @@
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
+## Blog posts
+
+Add MDX files to `blog/` with `title`, `date` (in `YYYY-MM-DD` format), and
+`slug` frontmatter, as in `blog/my-first-post.mdx`. Gatsby generates a page
+for each post under `/blog/`, and the home page shows the three newest posts.
+
 ## 🚀 Quick start (Netlify)
 
 Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
