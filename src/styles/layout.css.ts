@@ -151,6 +151,84 @@ export const intro = style({
     fontSize: '1.125rem'
 })
 
+export const aboutLead = style({
+    maxWidth: '62ch',
+    margin: '0 0 1.5rem',
+    fontSize: 'clamp(1.2rem, 2vw, 1.35rem)',
+    lineHeight: 1.65
+})
+
+export const aboutParagraph = style({
+    maxWidth: '62ch',
+    margin: 0
+})
+
+export const projectSection = style({
+    marginTop: '3rem',
+    paddingTop: '1.5rem',
+    borderTop: `1px solid ${colors.border}`
+})
+
+export const projectIntro = style({
+    maxWidth: '62ch',
+    margin: '0 0 1rem',
+    color: colors.secondary
+})
+
+export const projectList = style({
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+    columnGap: '2.5rem',
+    margin: 0,
+    padding: 0,
+    borderTop: `1px solid ${colors.border}`,
+    listStyle: 'none',
+    '@media': {
+        'screen and (max-width: 640px)': {
+            gridTemplateColumns: '1fr',
+            columnGap: 0
+        }
+    }
+})
+
+export const projectItem = style({
+    borderBottom: `1px solid ${colors.border}`
+})
+
+export const projectLink = style({
+    display: 'grid',
+    gap: '0.35rem',
+    height: '100%',
+    padding: '1rem 0 1.15rem',
+    color: colors.text,
+    textDecoration: 'none',
+    selectors: {
+        '&:hover': {
+            textDecoration: 'underline',
+            textDecorationColor: colors.accent,
+            textUnderlineOffset: '0.2em'
+        }
+    }
+})
+
+export const projectName = style({
+    color: colors.accent,
+    fontFamily: headingFont,
+    fontSize: '1.3rem',
+    lineHeight: 1.2
+})
+
+export const projectDescription = style({
+    color: colors.secondary,
+    fontSize: '0.9375rem',
+    lineHeight: 1.5
+})
+
+export const aboutClosing = style({
+    maxWidth: '62ch',
+    margin: '1.5rem 0 0'
+})
+
 export const recentPosts = style({
     marginTop: 'clamp(4rem, 8vw, 6rem)'
 })
